@@ -1,0 +1,156 @@
+/* Reset some defaults */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: #654321;
+  color: #fff;
+  padding: 1em;
+}
+
+header nav a {
+  color: #fff;
+  margin-right: 1em;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  background: #fff;
+  color: #654321;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+}
+
+/* Hero section */
+.hero {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 1em 1em;
+}
+
+/* Features */
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: #eee;
+  padding: 1em;
+  width: 30%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials */
+#testimonials {
+  background: #fafafa;
+  padding: 2em;
+}
+
+#testimonials blockquote {
+  max-width: 600px;
+  margin: 1em auto;
+  font-style: italic;
+  text-align: center;
+  border-left: 4px solid #654321;
+  padding-left: 1em;
+}
+
+/* Contact */
+#contact {
+  background: #f4f4f4;
+  padding: 2em;
+  text-align: center;
+}
+
+#contact form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+#contact input[type="email"] {
+  padding: 0.5em;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact button {
+  background: #654321;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#contact button:hover {
+  background: #654321;
+}
+
+/* Videos */
+#videos {
+  padding: 2em;
+  text-align: center;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.video-container iframe {
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #654321;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 80%;
+  }
+
+  .video-container {
+    flex-direction: column;
+  }
+}
