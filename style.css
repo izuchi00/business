@@ -30,7 +30,7 @@ header nav a:hover {
 .hero {
   background: #f4f4f4;
   text-align: center;
-  padding: 1em 1em;
+  padding: 1em;
 }
 
 /* Features */
@@ -113,23 +113,6 @@ header nav a:hover {
   background: #654321;
 }
 
-/* Videos */
-#videos {
-  padding: 2em;
-  text-align: center;
-}
-
-.video-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-
-.video-container iframe {
-  border-radius: 8px;
-}
-
 /* Footer */
 footer {
   background: #654321;
@@ -137,6 +120,12 @@ footer {
   text-align: center;
   padding: 1em;
   margin-top: 2em;
+}
+
+/* Ensure images never overflow */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Responsive tweaks */
@@ -149,8 +138,25 @@ footer {
   .feature {
     width: 80%;
   }
+}
 
-  .video-container {
+@media (max-width: 500px) {
+  .feature {
+    width: 95%;
+    padding: 1.5em;
+  }
+
+  header nav a {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  #contact input[type="email"] {
+    width: 90%;
+  }
+
+  #contact form {
     flex-direction: column;
+    align-items: center;
   }
 }
